@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    
+}
+:root {
+
+    --color-base-resaltado:#52463c;
+    --color-base: #2D3130;
+    --color-botones:#b35919;
+    --color-resaltado-botones: #ec6a0c;
+    --color-naranja-marron: #a36a08;
+}
+
+
+
+
+body {
+
+    background-color: var(--color-base);
+
+    display: flex;
+    flex-direction: column;
+
+    
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+    
+    padding: 5%;
+    gap: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.area__de__encriptado   {
+    background-color: var(--color-base);
+    
+    
+    border-radius: 1%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 70lh;
+    height: 80vh;
+
+    padding: 2%;
+    gap: 8%;
+}
+
+
+.area__de__texto {
+    background-color: var(--color-base);
+    font-size: 1.5rem;
+
+
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+    resize: none;
+
+    border-radius: 1px;
+    border: 0;
+    outline: none;
+}
+
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+
+
+    
+    gap: 15vh;
+}
+
+.boton__encriptar, .boton__desencriptar {
+    background-color: var(--color-botones);
+    color: black;
+    border: none;
+    
+    padding: 1lh 15vh; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton__encriptar:hover, .boton__desencriptar:hover {
+    background-color: var(--color-resaltado-botones); 
+    transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.area__de__salida {
+    background-color: var(--color-base-resaltado);
+
+    border-radius: 2%;
+
+    box-shadow: 1px 1px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    height: 90vh;
+    width: 30lh;
+    padding: 2%;
+    gap: 5%;
+    overflow: auto;
+}
+
+
+.imagen__de__salida {
+    width: 90%; 
+    height: auto; 
+    object-fit: cover; 
+}
+.pista__de__salida {
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+.texto__de__salida{
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+
+
+
+.boton__copiar {
+    display: none;
+    background-color: var(--color-botones);
+    color: black;
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    
+}
+
+.boton__copiar:hover {
+    background-color: var(--color-resaltado-botones); 
+    transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info {
+    background-color: var(--color-base-resaltado) ;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 60%;
+    margin-bottom: 5%;
+}
+
+.info__reglas {
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: var(--color-base-resaltado) ;
+    color: black;
+    font-size: 1.2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1280px){
+
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+        padding: 5%;
+        gap: 5%;
+    }
+    .area__de__encriptado   {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 40lh;
+        height: 40vh;
+
+    }
+    .botones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+    
+    
+        
+        gap: 8vh;
+    }
+    .boton__encriptar, .boton__desencriptar {
+        padding: 0.8lh 8vh; 
+
+    }
+    
+
+
+
+
+
+
+
+
+
+    .area__de__salida {
+        background-color: var(--color-base-resaltado);
+    
+        border-radius: 10px;
+    
+
+    
+ 
+        height: 40vh;
+        width: 40lh;
+
+    }
+
+    .imagen__de__salida {
+        width: 0%; 
+        height: auto; 
+        object-fit: cover;
+        display: none;
+    }
+    .info {
+
+        align-self: center;
+        padding: 1%;
+        margin-left: 1lh;
+        margin-right: 1lh;
+        margin-bottom: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px){
+
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+        padding: 5%;
+        gap: 5%;
+    }
+    .area__de__encriptado   {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 15lh;
+        height: 40vh;
+
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    
+    
+        
+        gap: 2vh;
+    }
+    .boton__encriptar, .boton__desencriptar {
+        padding: 0.8lh 8vh; 
+
+    }
+    
+
+
+
+
+
+
+
+
+
+    .area__de__salida {
+   
+        width: 15lh;
+        height: 40vh;
+
+    }
+
+    .imagen__de__salida {
+        width: 0%; 
+        height: auto; 
+        object-fit: cover;
+        display: none;
+    }
+    .info {
+
+        align-self: center;
+        padding: 1%;
+        margin-left: 1lh;
+        margin-right: 1lh;
+        margin-bottom: 5%;
+    }
+
+footer {
+
+
+
+    padding: 2%;
+    text-align: center;
+
+}
+
+}

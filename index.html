@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptalo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <header></header>
+    
+
+
+    <main>
+        
+        <div class="area__de__encriptado">
+        
+        <textarea class="area__de__texto" placeholder="Escribe aquí tu texto..." name="texto" rows="20" cols="60"></textarea>
+
+
+        <div class="botones">
+            
+            <button onclick="texto_html('encriptar')" class="boton__encriptar" >ENCRIPTAR</button>
+            <button onclick="texto_html('desencriptar')" class="boton__desencriptar">DESENCRIPTAR</button>
+        </div>
+
+
+        </div>
+
+
+
+
+        <div class="area__de__salida">
+
+            <img class="imagen__de__salida" src="assets/standing-man.png" alt="Icono de la pagina">
+            <p class="pista__de__salida">Ningun mensaje fue encontrado.  Escribe algo para comenzar...</p>
+            <p class="texto__de__salida"></p>
+            <button onclick="copiar_texto()" class="boton__copiar" >COPIAR</button>
+
+
+        </div>
+
+        
+    </main>
+
+    <div class="info">
+        <h2>Como funciona?</h2>
+        <h4>Las "llaves" de encriptacion son las siguientes:</h4>
+        <div class="info__reglas">
+            <ul>
+                <li>La letra "a" es convertida para "ai"</li>
+                <li>La letra "e" es convertida para "enter"</li>
+                <li>La letra "i" es convertida para "imes"</li>
+                <li>La letra "o" es convertida para "ober"</li>
+                <li>La letra "u" es convertida para "ufat"</li>
+            </ul>
+
+            
+
+
+
+        </div>
+        <h4>Solo encripta letras minusculas sin acentos</h4>
+    </div>
+
+    <footer><p class="pie">Desarrollado por Gonzalo M. Porro Rosas</p></footer> 
+    
+
+</body>
+
+
+
+</html>
